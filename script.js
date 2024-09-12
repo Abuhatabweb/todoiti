@@ -3,6 +3,13 @@ let btn = document.querySelector(".submit")
 let taskDiv = document.querySelector(".task-div")
 
 
+input.addEventListener("keydown" , (e)=>{
+    if (e.key == "Enter") {
+        btn.click()
+    }
+})
+
+
 // Add task
 btn.onclick = function () {
     if(input.value != "") {
